@@ -1,4 +1,3 @@
-syntax on
 colorscheme molokai
 set t_Co=256
 set autoindent
@@ -14,6 +13,29 @@ inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
+
+" Start NeoBundle Settings
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+NeoBundle 'thinca/vim-quickrun'
+let g:quickrun_config = {'command':'cpp/g++', 'cmdopt':'-std=c++11'}
+NeoBundle 'Shougo/neocomplete.vim'
+" Add new plugin
+
+call neobundle#end()
+
+filetype plugin indent on
+
+NeoBundleCheck
+" End NeoBundle Settings
+
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
