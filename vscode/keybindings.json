@@ -1,0 +1,33 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
+[
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusSideBar",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "!terminalFocus && vim.mode != 'SearchInProgressMode'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus && vim.mode != 'SearchInProgressMode'"
+    },
+]
