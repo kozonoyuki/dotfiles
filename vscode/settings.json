@@ -1,0 +1,104 @@
+{
+    "window.zoomLevel": -1,
+
+    // ==================
+    // vim
+    // ==================
+    // yank
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+    "vim.highlightedyank.duration": 200,
+    // システムのclipboardにコピー
+    "vim.useSystemClipboard": true,
+    // 検索結果のハイライト
+    "vim.hlsearch": true,
+    // カーソル上にあるワードをアスタリスクで検索
+    "vim.visualstar": true,
+    // surround有効化
+    "vim.surround": true,
+    // easymotion有効化
+    "vim.easymotion": true,
+    // リーダーキー
+    "vim.leader": "<space>",
+    // easymotionで使用するキー（今のところデフォルト）
+    "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf;",
+    "vim.easymotionMarkerBackgroundColor": "rgba(200,100,100,1.0)",
+    "vim.easymotionMarkerWidthPerChar": 15,
+    "vim.easymotionMarkerFontSize": "20",
+    "vim.easymotionMarkerFontWeight":"normal",
+    "vim.easymotionMarkerFontFamily": "Menlo",
+    "vim.easymotionMarkerYOffset": 5,
+    // crtキーを使用した操作が有効
+    "vim.useCtrlKeys": true,
+    // アラートを出さない
+    "vim.debug.silent": true,
+    // モードによってステータスバーの色を変える
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": "#294372",
+    "vim.statusBarColors.insert": "#e27b04",
+    "vim.statusBarColors.visual": "#cc3338",
+    "vim.statusBarColors.visualline": "#cc3338",
+    "vim.statusBarColors.visualblock": "#cc3338",
+    "vim.statusBarColors.replace": "#a5382c",
+
+    // ==================
+    // editor
+    // ==================
+    "editor.fontSize": 14.0,
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 0,
+    "editor.renderLineHighlight": "all",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.cursorStyle":"line-thin",
+    "editor.cursorBlinking": "smooth",
+    "editor.autoIndent": "full",
+    "editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.detectIndentation": false,
+    "editor.quickSuggestionsDelay": 1,
+    // 入力中の補完候補 
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    
+    // ==================
+    // extensions
+    // ==================
+    "extensions.autoUpdate": true,
+
+    // ==================
+    // files 
+    // ==================
+    "files.autoGuessEncoding": true,
+    "files.autoSave": "off",
+    "files.eol": "auto",
+
+    // ==================
+    // scm
+    // ==================
+    "scm.alwaysShowProviders": true,
+
+    // ==================
+    // workbench
+    // ==================
+    "workbench.editor.labelFormat": "default",
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.showIcons": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.startupEditor": "welcomePage",
+    "workbench.editor.openPositioning": "last",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#294372",
+        "statusBar.noFolderBackground": "#294372",
+        "statusBar.debuggingBackground": "#294372"
+    },
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    "git.autofetch": true,
+}
